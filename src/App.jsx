@@ -5,6 +5,8 @@ import Services from "./components/services";
 import Overview from "./components/Overview";
 import PortfolioDisplay from "./components/PortfolioDisplay";
 import Testimonial from "./components/Testimonial";
+import BlogSide from "./components/BlogSide";
+import PricingandPackage from "./components/PricingandPackage";
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
       <Overview></Overview>
       <PortfolioDisplay></PortfolioDisplay>
       <Testimonial></Testimonial>
+      <BlogSide></BlogSide>
+      <PricingandPackage></PricingandPackage>
     </div>
   );
 };
