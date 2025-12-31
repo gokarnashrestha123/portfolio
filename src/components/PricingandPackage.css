@@ -1,0 +1,142 @@
+/* Container for the whole section */
+.pricing-section {
+  padding: 60px 20px;
+  background-color: #f5f7fa;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+/* Heading section */
+.pricing-section h3 {
+  font-size: 20px;
+  color: #060607;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pricing-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #060b14;
+}
+
+/* Container for the package cards */
+.packages-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  height: 400px;
+}
+
+/* .package-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.package-card h1 {
+  font-size: 15px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  color: #1c6ec0;
+}
+
+
+.package-card p:first-of-type {
+  font-size: 28px;
+  font-weight: bold;
+  color: #377bc3;
+  margin-bottom: 15px;
+}
+
+
+.package-card p:last-of-type {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 100px;
+}
+
+
+.package-card button {
+  padding: 15px 25px;
+  margin-top: 30px;
+
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.package-card button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+} */
+.package-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column; /* stack content vertically */
+  justify-content: space-between;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Description takes normal space */
+.package-card p:last-of-type {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 25px;
+}
+
+/* Push button to bottom */
+.package-card button {
+  margin-top: auto; /* 🔥 key line */
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.package-card button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .packages-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .package-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}

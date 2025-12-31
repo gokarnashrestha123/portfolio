@@ -51,6 +51,7 @@ const PortfolioDisplay = () => {
             <div className="portfolio-overlay">
               <h3>{item.title}</h3>
               <p>{item.category}</p>
+              {/* <button>View Details</button> */}
             </div>
           </div>
         ))}
