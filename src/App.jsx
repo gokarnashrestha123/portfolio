@@ -11,14 +11,38 @@ import PricingandPackage from "./components/PricingandPackage";
 const App = () => {
   return (
     <div>
-      <Header></Header>
-      <About></About>
-      <Services></Services>
-      <Overview></Overview>
-      <PortfolioDisplay></PortfolioDisplay>
-      <Testimonial></Testimonial>
-      <BlogSide></BlogSide>
-      <PricingandPackage></PricingandPackage>
+      {/* HOME */}
+      <section id="home">
+        <Header />
+      </section>
+
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="services">
+        <Services />
+      </section>
+
+      <section id="overview">
+        <Overview />
+      </section>
+
+      <section id="portfolio">
+        <PortfolioDisplay />
+      </section>
+
+      <section id="testimonial">
+        <Testimonial />
+      </section>
+
+      <section id="blog">
+        <BlogSide />
+      </section>
+
+      <section id="pricing">
+        <PricingandPackage />
+      </section>
     </div>
   );
 };
